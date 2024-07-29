@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.541);
+  }
+  .question {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .question label{
+    padding: 10px 10px;
+  } 
+  .question span{
+    padding-left: 10px;
+  }
+  #question-head{
+    margin-left: 10px;
+
+    /* text-align: center; */
+  }
+  .options {
+    list-style: none;
+    padding: 0;
+  }
+  .options li {
+    margin: 10px 0;
+  }
+  .btn_container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .previous_btn{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background: white;
+    color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #28a745;
+  }
+  .btn {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    /* text-decoration: none; */
+  }
+  .btn:hover {
+    background: #218838;
+  }
+label{
+  cursor: pointer;
+}  
+#quiz_result {
+  display: none; 
+  text-align: center;
+  background-color: #f8f9fa; /* Light background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 50%;
+  margin: 20px auto; /* Center align with some margin */
+}
+
+#quiz_result h1 {
+  color: #28a745; /* Green color for win message */
+  font-size: 2em; /* Larger font size */
+  margin-bottom: 20px;
+}
+
+#quiz_result h3 {
+  color: #343a40; /* Dark color for right/wrong answers */
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+#quiz_result button {
+  margin-top: 30px;
+  background-color: #007bff; /* Blue background for button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#quiz_result button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
