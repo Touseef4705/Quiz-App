@@ -57,7 +57,7 @@ function renderQuiz() {
 }
 nextBtn.addEventListener("click", () => {
     const selected = document.querySelector(`input[name = question-${quizQuestionsIndex}]:checked`);
-    console.log("selected", selected, selected.value);
+    // console.log("selected", selected, selected.value);
     // console.log( "selected" , selected ,selected.value)
     if (selected) {
         if (selected.value == quizQuestions[quizQuestionsIndex].correctAnswer) {
